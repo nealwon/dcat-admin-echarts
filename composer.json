@@ -1,0 +1,31 @@
+{
+    "name": "dcat-admin/echarts",
+    "description": "EChart extension for dcat-admin",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension", "echarts"],
+    "homepage": "https://github.com/nealwon/dcat-admin-echarts",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kael",
+            "email": "nealwon@aol.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\ECharts\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Dcat\\Admin\\ECharts\\EchartsServiceProvider",
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\ECharts\\EchartsServiceProvider"
+            ]
+        }
+    }
+}
